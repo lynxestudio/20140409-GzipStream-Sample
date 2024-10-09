@@ -18,11 +18,11 @@ Ahora para probar el código, voy a crear un archivo llamado <i>dummy.zeros</i> 
 dd if=/dev/zero of=dummy.zeros bs=1000 count=20000
 </pre>
 <div>
-<IMG src="picture_library/compression/fig1.png">
+<IMG src="images/fig1.png">
 </div><br>
 <p>Ahora muestro el tamaño del archivo <i>dummy.zeros</i>, siendo de 20Mb.</p>
 <div>
-<IMG src="picture_library/compression/fig2.png">
+<IMG src="images/fig2.png">
 </div><br>
 <p>Ahora comprimo el archivo dummy.zeros con el programa  de ejemplo <i>GzipGunzip</i>, esto lo hago con
 el siguiente comando:</p>
@@ -30,11 +30,11 @@ el siguiente comando:</p>
 mono GzipGunzip.exe dummy.zeros
 </pre>
 <div>
-<IMG src="picture_library/compression/fig3.png">
+<IMG src="images/fig3.png">
 </div><br>
 <p align="justify">Si se ejecuta correctamente este programa debe crear un archivo llamado <i>dummy.zeros.gz</i>, el cual es el archivo comprimido de <i>dummy.zeros</i>. Comparamos el tamaño de ambos archivos.</p>
 <div>
-<IMG src="picture_library/compression/fig4.png">
+<IMG src="images/fig4.png">
 </div><br>
 <p align="justify">
 Ahora voy a descomprimir el archivo <i>dummy.zeros.gz</i> , pero antes de hacerlo voy a renombrar el archivo original <i>dummy.zeros</i> como <i>dummy.zeros.bak</i> para evitar que el archivo original se sobreescriba y así poder comparar todos los archivos. Ejecutamos nuevamente el programa  <i>GzipGunzip</i> pasándole como parámetro el nombre del archivo.
@@ -43,11 +43,11 @@ Ahora voy a descomprimir el archivo <i>dummy.zeros.gz</i> , pero antes de hacerl
 mono GzipGunzip.exe dummy.zeros.gz
 </pre>
 <div>
-<IMG src="picture_library/compression/fig5.png">
+<IMG src="images/fig5.png">
 </div><br>
 <p align="justify">Bien ahora con todos los archivos, podemos comparar sus tamaños y comprobar que las clases de compresión de .NET funcionaron.</p>
 <div>
-<IMG src="picture_library/compression/fig6.png">
+<IMG src="images/fig6.png">
 </div><br>
 <p align="justify">Para diseñar programas que utilicen las clases de compresión y descompresión de archivos en C#, el primer paso es crear los flujos de entrada y de salida.</p>
 <pre>
