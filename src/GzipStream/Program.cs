@@ -11,11 +11,13 @@ do
 {
 
 		Console.Clear();
-		Console.WriteLine("Welcome to the Gzip sample. Your main menu options are:");
-		Console.WriteLine(" 1. Compress");
-		Console.WriteLine(" 2. Uncompress");
 		Console.WriteLine();
-		Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
+		Console.WriteLine(" +----------------------------------------------------------+");
+		Console.WriteLine(" | Welcome to the Gzip sample. Your main menu options are:  |");
+		Console.WriteLine(" | 1. Compress                                              |");
+		Console.WriteLine(" | 2. Uncompress                                            |");
+		Console.WriteLine(" +----------------------------------------------------------+");
+		Console.Write("[ Enter your selection number (or type Exit to exit) ] ");
 		readResult = Console.ReadLine();
 		if (readResult != null)
 		{
