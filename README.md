@@ -24,24 +24,19 @@ dd if=/dev/zero of=dummy.zeros bs=1000 count=20000
 <div>
 <IMG src="images/fig2.png">
 </div><br>
-<p>Ahora comprimo el archivo dummy.zeros con el programa  de ejemplo <i>GzipGunzip</i>, esto lo hago con
-el siguiente comando:</p>
-<pre>
-mono GzipGunzip.exe dummy.zeros
-</pre>
+<p>Ahora comprimo el archivo dummy.zeros con el programa  de ejemplo, esto lo hago utilizando las opciones del menu:</p>
 <div>
 <IMG src="images/fig3.png">
-</div><br>
+</div>
+<br>
+<IMG src="images/fig4.png">
 <p align="justify">Si se ejecuta correctamente este programa debe crear un archivo llamado <i>dummy.zeros.gz</i>, el cual es el archivo comprimido de <i>dummy.zeros</i>. Comparamos el tamaño de ambos archivos.</p>
 <div>
-<IMG src="images/fig4.png">
+<IMG src="images/fig7.png">
 </div><br>
 <p align="justify">
-Ahora voy a descomprimir el archivo <i>dummy.zeros.gz</i> , pero antes de hacerlo voy a renombrar el archivo original <i>dummy.zeros</i> como <i>dummy.zeros.bak</i> para evitar que el archivo original se sobreescriba y así poder comparar todos los archivos. Ejecutamos nuevamente el programa  <i>GzipGunzip</i> pasándole como parámetro el nombre del archivo.
+Ahora voy a descomprimir el archivo <i>dummy.zeros.gz</i>. Ejecutamos nuevamente el programa utilizando la opcion 2 y pasandole el nombre del archivo.
 </p>
-<pre>
-mono GzipGunzip.exe dummy.zeros.gz
-</pre>
 <div>
 <IMG src="images/fig5.png">
 </div><br>
