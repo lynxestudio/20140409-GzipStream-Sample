@@ -30,6 +30,11 @@ dd if=/dev/zero of=dummy.zeros bs=1000 count=20000
 </div>
 <br>
 <IMG src="images/fig4.png">
+<br>
+<div>
+<IMG src="images/fig5.png">
+</div>
+<br>
 <p align="justify">Si se ejecuta correctamente este programa debe crear un archivo llamado <i>dummy.zeros.gz</i>, el cual es el archivo comprimido de <i>dummy.zeros</i>. Comparamos el tamaño de ambos archivos.</p>
 <div>
 <IMG src="images/fig7.png">
@@ -38,11 +43,11 @@ dd if=/dev/zero of=dummy.zeros bs=1000 count=20000
 Ahora voy a descomprimir el archivo <i>dummy.zeros.gz</i>. Ejecutamos nuevamente el programa utilizando la opcion 2 y pasandole el nombre del archivo.
 </p>
 <div>
-<IMG src="images/fig5.png">
+<IMG src="images/fig6.png">
 </div><br>
 <p align="justify">Bien ahora con todos los archivos, podemos comparar sus tamaños y comprobar que las clases de compresión de .NET funcionaron.</p>
 <div>
-<IMG src="images/fig6.png">
+<IMG src="images/fig7.png">
 </div><br>
 <p align="justify">Para diseñar programas que utilicen las clases de compresión y descompresión de archivos en C#, el primer paso es crear los flujos de entrada y de salida.</p>
 <pre>
